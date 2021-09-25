@@ -1,0 +1,13 @@
+aws_iot_shadow.c:43:6:aws_iot_shadow_reset_last_received_version	4	static
+aws_iot_shadow.c:47:10:aws_iot_shadow_get_last_received_version	4	static
+aws_iot_shadow.c:51:6:aws_iot_shadow_enable_discard_old_delta_msgs	4	static
+aws_iot_shadow.c:55:6:aws_iot_shadow_disable_discard_old_delta_msgs	4	static
+aws_iot_shadow.c:59:13:aws_iot_shadow_init	72	static
+aws_iot_shadow.c:93:13:aws_iot_shadow_connect	96	static
+aws_iot_shadow.c:135:13:aws_iot_shadow_register_delta	16	static
+aws_iot_shadow.c:147:13:aws_iot_shadow_yield	16	static
+aws_iot_shadow.c:156:13:aws_iot_shadow_disconnect	16	static
+aws_iot_shadow.c:160:13:aws_iot_shadow_update	48	static
+aws_iot_shadow.c:179:13:aws_iot_shadow_delete	152	static
+aws_iot_shadow.c:201:13:aws_iot_shadow_get	152	static
+aws_iot_shadow.c:222:13:aws_iot_shadow_set_autoreconnect_status	16	static

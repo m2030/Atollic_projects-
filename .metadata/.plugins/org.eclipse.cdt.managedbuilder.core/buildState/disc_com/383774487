@@ -1,0 +1,8 @@
+#
+#Sat May 02 21:23:53 EET 2020
+Debug/disc_com.elf=1
+Debug_STM32F407VG_FLASH.ld=1
+Debug/disc_com=1
+disc_com.elf=1
+Debug/Src/usbd_conf.o=1
+Src/usbd_conf.c=1

@@ -1,0 +1,18 @@
+23:41:53 **** Incremental Build of configuration Debug for project FreeRTOS_lwIP ****
+make all 
+"C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\ide\jre\bin\java" -jar "C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\Tools\arm-atollic-reports.jar" convert-hex sizeinfo list FreeRTOS_lwIP.elf
+Generate build reports...
+Converting build output to hex
+Output sent to: FreeRTOS_lwIP.hex
+Converting build output to hex done
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+ 116880	    136	  94956	 211972	  33c04	FreeRTOS_lwIP.elf
+Print size information done
+Generate listing file
+Output sent to: FreeRTOS_lwIP.list
+Generate listing file done
+Generate build reports done
+
+23:41:54 Build Finished (took 1s.553ms)
+

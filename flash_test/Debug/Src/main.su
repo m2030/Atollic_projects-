@@ -1,0 +1,10 @@
+main.c:109:5:getInputString	40	static
+main.c:77:5:enterPemString	40	static
+main.c:485:6:StartDefaultTask	16	static
+main.c:169:1:__io_putchar	24	static
+main.c:185:1:__io_getchar	24	static
+main.c:287:6:SystemClock_Config	96	static
+main.c:202:5:main	64	static
+main.c:518:6:StartTask02	8	static
+main.c:537:6:HAL_TIM_PeriodElapsedCallback	0	static
+main.c:554:6:Error_Handler	0	static

@@ -1,0 +1,4 @@
+awsiot.c:181:12:mqtt_aws_tls_cb	16	static
+awsiot.c:162:12:mqtt_aws_tls_verify_cb	96	static
+awsiot.c:212:12:mqtt_message_cb	104	static
+awsiot.c:253:5:awsiot_test	40	static

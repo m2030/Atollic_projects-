@@ -1,0 +1,10 @@
+misc.c:157:26:ByteReverseWords	8	static
+sha256.c:815:16:Transform_Sha256	80	static
+sha256.c:728:9:wc_InitSha256_ex	8	static
+sha256.c:1105:9:wc_Sha256Update	24	static
+sha256.c:1239:9:wc_Sha256FinalRaw	48	static
+sha256.c:1260:9:wc_Sha256Final	24	static
+sha256.c:1514:5:wc_InitSha256	0	static
+sha256.c:1519:6:wc_Sha256Free	0	static
+sha256.c:1677:5:wc_Sha256Copy	8	static
+sha256.c:1647:5:wc_Sha256GetHash	120	static

@@ -1,0 +1,7 @@
+firewall_wrapper.c:78:6:firewall_init	0	static
+firewall_wrapper.c:106:5:mbedtls_firewall_pk_parse_key	32	static
+firewall_wrapper.c:117:5:firewall_can_do	8	static
+firewall_wrapper.c:126:5:firewall_sign_wrap	48	static
+firewall_wrapper.c:140:6:firewall_free_wrap	8	static
+firewall_wrapper.c:147:6:heap_firewall_stat	24	static
+firewall_wrapper.c:154:5:FLASH_firewall_update	24	static

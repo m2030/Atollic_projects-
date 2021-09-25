@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;wolfssl_Stm32_f7_2/Inc/wolfSSL_conf.h&apos; to &apos;I-CUBE-wolfSSL_conf.h&apos;" description="Rename resource &apos;wolfSSL_conf.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Inc/wolfSSL_conf.h" name="I-CUBE-wolfSSL_conf.h" stamp="1615492785858" updateReferences="true"/>
+</session>

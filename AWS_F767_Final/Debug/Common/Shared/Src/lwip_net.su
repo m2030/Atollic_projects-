@@ -1,0 +1,3 @@
+lwip_net.c:118:5:net_if_init	40	static
+lwip_net.c:180:5:net_if_deinit	0	static
+lwip_net.c:186:5:net_if_reinit	8	static

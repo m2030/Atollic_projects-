@@ -1,0 +1,4 @@
+aws_iot_mqtt_client_connect.c:458:13:aws_iot_mqtt_connect	56	static
+aws_iot_mqtt_client_connect.c:507:13:_aws_iot_mqtt_internal_disconnect	32	static
+aws_iot_mqtt_client_connect.c:552:13:aws_iot_mqtt_disconnect	16	static
+aws_iot_mqtt_client_connect.c:598:13:aws_iot_mqtt_attempt_reconnect	8	static

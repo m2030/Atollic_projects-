@@ -1,0 +1,7 @@
+21:06:04 **** Incremental Build of configuration Debug for project mqtt_hivemq ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-objcopy.exe -O ihex mqtt_hivemq.elf mqtt_hivemq.hex 
+Info: Parallel threads used: 0
+
+21:06:04 Build Finished (took 333ms)
+

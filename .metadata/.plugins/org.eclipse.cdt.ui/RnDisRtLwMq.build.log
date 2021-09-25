@@ -1,0 +1,87 @@
+00:40:51 **** Incremental Build of configuration Debug for project RnDisRtLwMq ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -std=gnu11 -DUSE_HAL_DRIVER -DSTM32F407xx -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/LwIP/system -I../Middlewares/Third_Party/LwIP/src/include -I../Middlewares/Third_Party/LwIP/src/include/lwip -I../Middlewares/Third_Party/LwIP/src/include/lwip/priv -I../Middlewares/Third_Party/LwIP/src/include/netif -I../Middlewares/Third_Party/LwIP/src/include/netif/ppp/polarssl -I../Middlewares/Third_Party/LwIP/src/include/netif/ppp -I../Middlewares/Third_Party/LwIP/src/include/posix -I../Middlewares/Third_Party/LwIP/src/include/lwip/prot -I../Middlewares/Third_Party/LwIP/src/include/posix/sys -I../Middlewares/Third_Party/LwIP/system/arch -I../Middlewares/Third_Party/LwIP/system/OS -Os -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o ..\Src\main.c 
+..\Src\main.c: In function 'DHT11_Start':
+..\Src\main.c:136:2: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  delay (18000);   // wait for 18ms
+  ^~~~~
+..\Src\main.c: At top level:
+..\Src\main.c:173:6: warning: conflicting types for 'delay'
+ void delay (uint16_t time)
+      ^~~~~
+..\Src\main.c:136:2: note: previous implicit declaration of 'delay' was here
+  delay (18000);   // wait for 18ms
+  ^~~~~
+..\Src\main.c: In function 'HAL_GPIO_EXTI_Callback':
+..\Src\main.c:582:4: warning: implicit declaration of function 'ethernetif_set_link' [-Wimplicit-function-declaration]
+    ethernetif_set_link(&gnetif);
+    ^~~~~~~~~~~~~~~~~~~
+..\Src\main.c: In function 'Mqtt_test':
+..\Src\main.c:614:5: warning: implicit declaration of function 'ethernetif_input' [-Wimplicit-function-declaration]
+     ethernetif_input(&gnetif);
+     ^~~~~~~~~~~~~~~~
+..\Src\main.c:622:40: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+        sprintf(pacote,"{\"device_id\":%d,\"temperature\":%d.%d,\"Humiduty\":%d.%d,\"Led1\":1}",tiner,Temp_byte1,Temp_byte2,Rh_byte1,Rh_byte2);
+                                        ^
+..\Src\main.c: In function 'Start':
+..\Src\main.c:725:34: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+ HAL_UART_Transmit(&huart3,buffer,strlen(buffer),1000);
+                                  ^~~~~~
+..\Src\main.c:725:34: warning: incompatible implicit declaration of built-in function 'strlen'
+..\Src\main.c:725:34: note: include '<string.h>' or provide a declaration of 'strlen'
+..\Src\main.c:725:27: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+ HAL_UART_Transmit(&huart3,buffer,strlen(buffer),1000);
+                           ^~~~~~
+In file included from ../Inc/stm32f4xx_hal_conf.h:364:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ..\Src\main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:696:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+..\Src\main.c:741:30: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+    HAL_UART_Transmit(&huart3,buffer,strlen(buffer),1000);
+                              ^~~~~~
+In file included from ../Inc/stm32f4xx_hal_conf.h:364:0,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ..\Src\main.c:22:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:696:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+In file included from ..\Src\main.c:33:0:
+..\Src\main.c: At top level:
+../Inc/lwip_mqtt.h:4:13: warning: 'mqtt_connection_cb' declared 'static' but never defined [-Wunused-function]
+ static void mqtt_connection_cb(mqtt_client_t *client, void *arg, mqtt_connection_status_t status);
+             ^~~~~~~~~~~~~~~~~~
+../Inc/lwip_mqtt.h:5:13: warning: 'mqtt_incoming_publish_cb' declared 'static' but never defined [-Wunused-function]
+ static void mqtt_incoming_publish_cb(void *arg, const char *topic, u32_t tot_len);
+             ^~~~~~~~~~~~~~~~~~~~~~~~
+../Inc/lwip_mqtt.h:6:13: warning: 'mqtt_incoming_data_cb' declared 'static' but never defined [-Wunused-function]
+ static void mqtt_incoming_data_cb(void *arg, const u8_t *data, u16_t len, u8_t flags);
+             ^~~~~~~~~~~~~~~~~~~~~
+../Inc/lwip_mqtt.h:8:13: warning: 'mqtt_pub_request_cb' declared 'static' but never defined [-Wunused-function]
+ static void mqtt_pub_request_cb(void *arg, err_t result);
+             ^~~~~~~~~~~~~~~~~~~
+..\Src\main.c:99:13: warning: 'cloud_test' declared 'static' but never defined [-Wunused-function]
+ static void cloud_test(void const *arg);
+             ^~~~~~~~~~
+..\Src\main.c: In function 'DHT11_Read':
+..\Src\main.c:166:5: warning: 'i' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    i&= ~(1<<(7-j));   // write 0
+     ^~
+arm-atollic-eabi-gcc -o RnDisRtLwMq.elf Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.o Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.o Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o Middlewares\Third_Party\FreeRTOS\Source\croutine.o Middlewares\Third_Party\FreeRTOS\Source\event_groups.o Middlewares\Third_Party\FreeRTOS\Source\list.o Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.o Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o Middlewares\Third_Party\FreeRTOS\Source\queue.o Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.o Middlewares\Third_Party\FreeRTOS\Source\tasks.o Middlewares\Third_Party\FreeRTOS\Source\timers.o Middlewares\Third_Party\LwIP\src\api\api_lib.o Middlewares\Third_Party\LwIP\src\api\api_msg.o Middlewares\Third_Party\LwIP\src\api\err.o Middlewares\Third_Party\LwIP\src\api\netbuf.o Middlewares\Third_Party\LwIP\src\api\netdb.o Middlewares\Third_Party\LwIP\src\api\netifapi.o Middlewares\Third_Party\LwIP\src\api\sockets.o Middlewares\Third_Party\LwIP\src\api\tcpip.o Middlewares\Third_Party\LwIP\src\apps\mqtt\mqtt.o Middlewares\Third_Party\LwIP\src\core\def.o Middlewares\Third_Party\LwIP\src\core\dns.o Middlewares\Third_Party\LwIP\src\core\inet_chksum.o Middlewares\Third_Party\LwIP\src\core\init.o Middlewares\Third_Party\LwIP\src\core\ip.o Middlewares\Third_Party\LwIP\src\core\ipv4\autoip.o Middlewares\Third_Party\LwIP\src\core\ipv4\dhcp.o Middlewares\Third_Party\LwIP\src\core\ipv4\etharp.o Middlewares\Third_Party\LwIP\src\core\ipv4\icmp.o Middlewares\Third_Party\LwIP\src\core\ipv4\igmp.o Middlewares\Third_Party\LwIP\src\core\ipv4\ip4.o Middlewares\Third_Party\LwIP\src\core\ipv4\ip4_addr.o Middlewares\Third_Party\LwIP\src\core\ipv4\ip4_frag.o Middlewares\Third_Party\LwIP\src\core\ipv6\dhcp6.o Middlewares\Third_Party\LwIP\src\core\ipv6\ethip6.o Middlewares\Third_Party\LwIP\src\core\ipv6\icmp6.o Middlewares\Third_Party\LwIP\src\core\ipv6\inet6.o Middlewares\Third_Party\LwIP\src\core\ipv6\ip6.o Middlewares\Third_Party\LwIP\src\core\ipv6\ip6_addr.o Middlewares\Third_Party\LwIP\src\core\ipv6\ip6_frag.o Middlewares\Third_Party\LwIP\src\core\ipv6\mld6.o Middlewares\Third_Party\LwIP\src\core\ipv6\nd6.o Middlewares\Third_Party\LwIP\src\core\mem.o Middlewares\Third_Party\LwIP\src\core\memp.o Middlewares\Third_Party\LwIP\src\core\netif.o Middlewares\Third_Party\LwIP\src\core\pbuf.o Middlewares\Third_Party\LwIP\src\core\raw.o Middlewares\Third_Party\LwIP\src\core\stats.o Middlewares\Third_Party\LwIP\src\core\sys.o Middlewares\Third_Party\LwIP\src\core\tcp.o Middlewares\Third_Party\LwIP\src\core\tcp_in.o Middlewares\Third_Party\LwIP\src\core\tcp_out.o Middlewares\Third_Party\LwIP\src\core\timeouts.o Middlewares\Third_Party\LwIP\src\core\udp.o Middlewares\Third_Party\LwIP\src\netif\ethernet.o Middlewares\Third_Party\LwIP\src\netif\ethernetif_template.o Middlewares\Third_Party\LwIP\src\netif\lowpan6.o Middlewares\Third_Party\LwIP\src\netif\ppp\auth.o Middlewares\Third_Party\LwIP\src\netif\ppp\ccp.o Middlewares\Third_Party\LwIP\src\netif\ppp\chap-md5.o Middlewares\Third_Party\LwIP\src\netif\ppp\chap-new.o Middlewares\Third_Party\LwIP\src\netif\ppp\chap_ms.o Middlewares\Third_Party\LwIP\src\netif\ppp\demand.o Middlewares\Third_Party\LwIP\src\netif\ppp\eap.o Middlewares\Third_Party\LwIP\src\netif\ppp\ecp.o Middlewares\Third_Party\LwIP\src\netif\ppp\eui64.o Middlewares\Third_Party\LwIP\src\netif\ppp\fsm.o Middlewares\Third_Party\LwIP\src\netif\ppp\ipcp.o Middlewares\Third_Party\LwIP\src\netif\ppp\ipv6cp.o Middlewares\Third_Party\LwIP\src\netif\ppp\lcp.o Middlewares\Third_Party\LwIP\src\netif\ppp\magic.o Middlewares\Third_Party\LwIP\src\netif\ppp\mppe.o Middlewares\Third_Party\LwIP\src\netif\ppp\multilink.o Middlewares\Third_Party\LwIP\src\netif\ppp\polarssl\arc4.o Middlewares\Third_Party\LwIP\src\netif\ppp\polarssl\des.o Middlewares\Third_Party\LwIP\src\netif\ppp\polarssl\md4.o Middlewares\Third_Party\LwIP\src\netif\ppp\polarssl\md5.o Middlewares\Third_Party\LwIP\src\netif\ppp\polarssl\sha1.o Middlewares\Third_Party\LwIP\src\netif\ppp\ppp.o Middlewares\Third_Party\LwIP\src\netif\ppp\pppapi.o Middlewares\Third_Party\LwIP\src\netif\ppp\pppcrypt.o Middlewares\Third_Party\LwIP\src\netif\ppp\pppoe.o Middlewares\Third_Party\LwIP\src\netif\ppp\pppol2tp.o Middlewares\Third_Party\LwIP\src\netif\ppp\pppos.o Middlewares\Third_Party\LwIP\src\netif\ppp\upap.o Middlewares\Third_Party\LwIP\src\netif\ppp\utils.o Middlewares\Third_Party\LwIP\src\netif\ppp\vj.o Middlewares\Third_Party\LwIP\src\netif\slipif.o Middlewares\Third_Party\LwIP\system\OS\sys_arch.o Src\app_ethernet.o Src\enc28j60.o Src\ethernetif.o Src\freertos.o Src\lwip.o Src\lwip_mqtt.o Src\main.o Src\stm32f4xx_hal_msp.o Src\stm32f4xx_hal_timebase_tim.o Src\stm32f4xx_it.o Src\syscalls.o Src\system_stm32f4xx.o startup\startup_stm32f407xx.o -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T../Debug_STM32F407VG_FLASH.ld -specs=nosys.specs -static -Wl,-Map=RnDisRtLwMq.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\Tools\arm-atollic-reports.jar sizeinfo list RnDisRtLwMq.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+  64460	    132	 101700	 166292	  28994	RnDisRtLwMq.elf
+Print size information done
+Generate listing file
+Output sent to: RnDisRtLwMq.list
+Generate listing file done
+Generate build reports done
+arm-atollic-eabi-objcopy.exe -O ihex RnDisRtLwMq.elf RnDisRtLwMq.hex 
+
+00:40:55 Build Finished (took 3s.636ms)
+

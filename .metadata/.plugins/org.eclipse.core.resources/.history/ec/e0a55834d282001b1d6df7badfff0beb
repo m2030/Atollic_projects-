@@ -1,0 +1,7 @@
+chacha20_poly1305.c:119:5:wc_ChaCha20Poly1305_CheckTag	12	static
+chacha20_poly1305.c:134:5:wc_ChaCha20Poly1305_Init	56	static
+chacha20_poly1305.c:186:5:wc_ChaCha20Poly1305_UpdateAad	16	static
+chacha20_poly1305.c:213:5:wc_ChaCha20Poly1305_UpdateData	24	static
+chacha20_poly1305.c:256:5:wc_ChaCha20Poly1305_Final	16	static
+chacha20_poly1305.c:50:5:wc_ChaCha20Poly1305_Encrypt	192	static
+chacha20_poly1305.c:82:5:wc_ChaCha20Poly1305_Decrypt	216	static

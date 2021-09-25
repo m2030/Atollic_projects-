@@ -1,0 +1,11 @@
+aws_iot_mqtt_client.c:62:13:aws_iot_mqtt_get_client_state	16	static
+aws_iot_mqtt_client.c:105:13:aws_iot_mqtt_set_client_state	24	static
+aws_iot_mqtt_client.c:140:13:aws_iot_mqtt_set_connect_params	24	static
+aws_iot_mqtt_client.c:174:13:aws_iot_mqtt_init	120	static
+aws_iot_mqtt_client.c:245:10:aws_iot_mqtt_get_next_packet_id	16	static
+aws_iot_mqtt_client.c:250:6:aws_iot_mqtt_is_client_connected	24	static
+aws_iot_mqtt_client.c:287:6:aws_iot_is_autoreconnect_enabled	16	static
+aws_iot_mqtt_client.c:297:13:aws_iot_mqtt_autoreconnect_set_status	16	static
+aws_iot_mqtt_client.c:306:13:aws_iot_mqtt_set_disconnect_handler	24	static
+aws_iot_mqtt_client.c:318:10:aws_iot_mqtt_get_network_disconnected_count	16	static
+aws_iot_mqtt_client.c:322:6:aws_iot_mqtt_reset_network_disconnected_count	16	static

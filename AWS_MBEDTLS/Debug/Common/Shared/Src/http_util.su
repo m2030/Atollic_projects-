@@ -1,0 +1,11 @@
+http_util.c:106:5:http_req_create	56	static
+http_util.c:167:6:http_req_destroy	16	static
+http_util.c:182:5:http_open	56	static
+http_util.c:249:5:http_close	32	static
+http_util.c:289:5:http_read	1168	static
+http_util.c:479:6:http_is_open	24	static
+http_util.c:500:5:http_url_parse	40	static
+http_util.c:585:5:http_sock_open	32	static
+http_util.c:622:5:http_sock_close	24	static
+http_util.c:648:5:http_sock_rcv	72	static
+http_util.c:702:5:http_sock_get_resource_size	24	static

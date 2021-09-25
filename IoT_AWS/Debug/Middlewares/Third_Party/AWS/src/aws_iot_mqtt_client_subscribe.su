@@ -1,0 +1,4 @@
+aws_iot_mqtt_client_subscribe.c:116:20:_aws_iot_mqtt_deserialize_suback.constprop	40	static
+aws_iot_mqtt_client_subscribe.c:58:20:_aws_iot_mqtt_serialize_subscribe.constprop	56	static
+aws_iot_mqtt_client_subscribe.c:288:13:aws_iot_mqtt_subscribe	80	static
+aws_iot_mqtt_client_subscribe.c:404:13:aws_iot_mqtt_resubscribe	72	static

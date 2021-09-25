@@ -1,0 +1,9 @@
+main.c:97:6:delay	0	static
+main.c:112:6:Set_Pin_Output	40	static
+main.c:121:6:Set_Pin_Input	40	static
+main.c:130:6:DHT11_Start	8	static
+main.c:140:9:DHT11_Check_Response	16	static
+main.c:155:9:DHT11_Read	16	static
+main.c:250:6:SystemClock_Config	312	static
+main.c:178:5:main	2088	static
+main.c:555:6:Error_Handler	0	static

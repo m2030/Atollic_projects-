@@ -1,0 +1,15 @@
+hash.c:64:18:wc_HashTypeConvert	0	static
+hash.c:135:5:wc_HashGetOID	0	static
+hash.c:209:18:wc_OidGetHash	0	static
+hash.c:273:5:wc_HashGetDigestSize	0	static
+hash.c:362:5:wc_HashGetBlockSize	0	static
+hash.c:543:5:wc_HashInit_ex	8	static
+hash.c:618:5:wc_HashInit	0	static
+hash.c:623:5:wc_HashUpdate	8	static
+hash.c:698:5:wc_HashFinal	4	static
+hash.c:772:5:wc_HashFree	8	static
+hash.c:1104:9:wc_Sha256Hash	24	static
+hash.c:450:5:wc_Hash	16	static
+hash.c:1432:5:wc_PRF	56	static
+hash.c:1558:5:wc_PRF_TLSv1	200	static
+hash.c:1649:5:wc_PRF_TLS	192	static

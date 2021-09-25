@@ -1,0 +1,7 @@
+19:35:25 **** Incremental Build of configuration Debug for project httpc_f7 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-objcopy.exe -O ihex httpc_f7.elf httpc_f7.hex 
+Info: Parallel threads used: 0
+
+19:35:25 Build Finished (took 452ms)
+

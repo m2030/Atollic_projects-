@@ -1,0 +1,9 @@
+aws_iot_mqtt_client_connect.c:115:17:_aws_iot_get_connect_packet_length	24	static
+aws_iot_mqtt_client_connect.c:152:20:_aws_iot_mqtt_serialize_connect	56	static
+aws_iot_mqtt_client_connect.c:256:20:_aws_iot_mqtt_deserialize_connack	56	static
+aws_iot_mqtt_client_connect.c:339:13:_aws_iot_mqtt_is_client_state_valid_for_connect	24	static
+aws_iot_mqtt_client_connect.c:384:20:_aws_iot_mqtt_internal_connect	40	static
+aws_iot_mqtt_client_connect.c:458:13:aws_iot_mqtt_connect	24	static
+aws_iot_mqtt_client_connect.c:507:13:_aws_iot_mqtt_internal_disconnect	32	static
+aws_iot_mqtt_client_connect.c:552:13:aws_iot_mqtt_disconnect	24	static
+aws_iot_mqtt_client_connect.c:598:13:aws_iot_mqtt_attempt_reconnect	24	static

@@ -1,0 +1,4 @@
+keys.c:45:5:SetCipherSpecs	8	static
+keys.c:3062:5:SetKeysSide	48	static
+keys.c:3234:5:StoreKeys	32	static
+keys.c:3659:5:MakeMasterSecret	0	static

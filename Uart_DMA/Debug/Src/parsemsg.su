@@ -1,0 +1,3 @@
+parsemsg.c:111:14:at_check_format	16	static
+parsemsg.c:20:7:at_parse_msg	8	static
+parsemsg.c:74:11:at_wait_msg	200	static

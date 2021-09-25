@@ -1,0 +1,11 @@
+aws_timer.c:31:6:sleep	0	static
+aws_timer.c:36:6:has_timer_expired	8	static
+aws_timer.c:49:6:countdown_ms	16	static
+aws_timer.c:60:10:left_ms	8	static
+aws_timer.c:73:6:countdown_sec	16	static
+aws_timer.c:84:6:init_timer	0	static
+aws_timer.c:87:6:TimerCountdownMS	16	static
+aws_timer.c:94:6:TimerCountdown	16	static
+aws_timer.c:100:5:TimerLeftMS	8	static
+aws_timer.c:116:6:TimerIsExpired	8	static
+aws_timer.c:122:6:TimerInit	0	static

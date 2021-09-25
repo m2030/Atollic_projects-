@@ -1,0 +1,11 @@
+aws_iot_json_utils.c:46:8:jsoneq	16	static
+aws_iot_json_utils.c:57:13:parseUnsignedInteger32Value	8	static
+aws_iot_json_utils.c:71:13:parseUnsignedInteger16Value	8	static
+aws_iot_json_utils.c:85:13:parseUnsignedInteger8Value	8	static
+aws_iot_json_utils.c:99:13:parseInteger32Value	8	static
+aws_iot_json_utils.c:113:13:parseInteger16Value	8	static
+aws_iot_json_utils.c:127:13:parseInteger8Value	8	static
+aws_iot_json_utils.c:141:13:parseFloatValue	8	static
+aws_iot_json_utils.c:155:13:parseDoubleValue	8	static
+aws_iot_json_utils.c:169:13:parseBooleanValue	0	static
+aws_iot_json_utils.c:188:13:parseStringValue	16	static

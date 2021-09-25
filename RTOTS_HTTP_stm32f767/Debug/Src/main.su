@@ -1,0 +1,11 @@
+main.c:552:7:RecvHttpHeaderCallback	8	static
+main.c:559:6:HttpClientResultCallback	24	static
+main.c:534:7:RecvpayloadCallback	8	static
+main.c:579:6:StartDefaultTask	640	static
+main.c:108:1:__io_putchar	24	static
+main.c:124:1:__io_getchar	24	static
+main.c:248:6:SystemClock_Config	232	static
+main.c:159:5:main	64	static
+main.c:709:6:StartTask02	8	static
+main.c:766:6:HAL_TIM_PeriodElapsedCallback	0	static
+main.c:783:6:Error_Handler	0	static

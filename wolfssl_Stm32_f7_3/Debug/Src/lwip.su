@@ -1,0 +1,2 @@
+lwip.c:92:6:User_notification	8	static
+lwip.c:120:6:MX_LWIP_Init	48	static

@@ -1,0 +1,7 @@
+aws_iot_mqtt_client_subscribe.c:58:20:_aws_iot_mqtt_serialize_subscribe	56	static
+aws_iot_mqtt_client_subscribe.c:116:20:_aws_iot_mqtt_deserialize_suback	56	static
+aws_iot_mqtt_client_subscribe.c:173:17:_aws_iot_mqtt_get_free_message_handler_index	24	static
+aws_iot_mqtt_client_subscribe.c:203:20:_aws_iot_mqtt_internal_subscribe	88	static
+aws_iot_mqtt_client_subscribe.c:288:13:aws_iot_mqtt_subscribe	40	static
+aws_iot_mqtt_client_subscribe.c:337:20:_aws_iot_mqtt_internal_resubscribe	88	static
+aws_iot_mqtt_client_subscribe.c:404:13:aws_iot_mqtt_resubscribe	24	static

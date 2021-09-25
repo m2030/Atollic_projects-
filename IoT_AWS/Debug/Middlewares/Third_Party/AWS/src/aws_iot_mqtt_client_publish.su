@@ -1,0 +1,4 @@
+aws_iot_mqtt_client_publish.c:146:13:aws_iot_mqtt_internal_serialize_ack	32	static
+aws_iot_mqtt_client_publish.c:312:13:aws_iot_mqtt_internal_deserialize_publish	40	static
+aws_iot_mqtt_client_publish.c:383:13:aws_iot_mqtt_internal_deserialize_ack	32	static
+aws_iot_mqtt_client_publish.c:262:13:aws_iot_mqtt_publish	96	static

@@ -1,0 +1,148 @@
+21:21:06 **** Incremental Build of configuration Debug for project Great_project_2 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m7 -mfloat-abi=hard -mfpu=fpv5-sp-d16 -std=gnu11 -DMBEDTLS_CONFIG_FILE=<aws_mbedtls_config.h> -DUSE_HAL_DRIVER -DSTM32F767xx -DAWS -DENABLE_IOT_ERROR -DENABLE_IOT_INFO -DENABLE_IOT_WARNING -DHAS_RTOS -DLWIP_TIMEVAL_PRIVATE=0 -DUSE_LWIP -DUSE_MBED_TLS -I../Inc -I../Common/AWS/Inc -I../Common/Shared/Inc -I../Middlewares/Third_Party/LwIP/src/include -I../Middlewares/Third_Party/LwIP/system -I../Middlewares/Third_Party/mbedTLS/include -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -I../Middlewares/Third_Party/LwIP/src/include/netif/ppp -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Middlewares/Third_Party/LwIP/src/include/lwip -I../Middlewares/Third_Party/LwIP/src/include/lwip/apps -I../Middlewares/Third_Party/LwIP/src/include/lwip/priv -I../Middlewares/Third_Party/LwIP/src/include/lwip/prot -I../Middlewares/Third_Party/LwIP/src/include/netif -I../Middlewares/Third_Party/LwIP/src/include/compat/posix -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/arpa -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/net -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/sys -I../Middlewares/Third_Party/LwIP/src/include/compat/stdc -I../Middlewares/Third_Party/LwIP/system/arch -I../Middlewares/Third_Party/mbedTLS/include/mbedtls -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/AWS/external_libs/jsmn -I../Middlewares/Third_Party/AWS/include -Os -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Src\parse_callBack.o ..\Src\parse_callBack.c 
+..\Src\parse_callBack.c: In function 'at_check_format':
+..\Src\parse_callBack.c:25:12: warning: pointer targets in passing argument 1 of 'atoi' differ in signedness [-Wpointer-sign]
+  r_ip=atoi(data->id);
+            ^~~~
+In file included from c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\string.h:10:0,
+                 from ../Inc/main.h:46,
+                 from ..\Src\parse_callBack.c:1:
+c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\stdlib.h:81:5: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int _EXFUN(atoi,(const char *__nptr));
+     ^
+..\Src\parse_callBack.c:26:16: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if (strcmp(data->header, AT_HEADER) != 0) {
+                ^~~~
+In file included from c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\string.h:10:0,
+                 from ../Inc/main.h:46,
+                 from ..\Src\parse_callBack.c:1:
+c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+..\Src\parse_callBack.c:32:16: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if (strcmp(data->command, AT_DEVICE_PROFILE) == 0) {
+                ^~~~
+In file included from c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\string.h:10:0,
+                 from ../Inc/main.h:46,
+                 from ..\Src\parse_callBack.c:1:
+c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+..\Src\parse_callBack.c:36:16: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if (strcmp(data->command, AT_SET_DEVICE) == 0) {
+                ^~~~
+In file included from c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\string.h:10:0,
+                 from ../Inc/main.h:46,
+                 from ..\Src\parse_callBack.c:1:
+c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+..\Src\parse_callBack.c: In function 'at_parse_msg':
+..\Src\parse_callBack.c:53:17: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+       if(strcmp(data->data,Led_off)==0){
+                 ^~~~
+In file included from c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\string.h:10:0,
+                 from ../Inc/main.h:46,
+                 from ..\Src\parse_callBack.c:1:
+c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+..\Src\parse_callBack.c:57:17: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+       if(strcmp(data->data,Led_on)==0){
+                 ^~~~
+In file included from c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\string.h:10:0,
+                 from ../Inc/main.h:46,
+                 from ..\Src\parse_callBack.c:1:
+c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+..\Src\parse_callBack.c:61:17: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+       if(strcmp(data->data,relay1_off)==0){
+                 ^~~~
+In file included from c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\string.h:10:0,
+                 from ../Inc/main.h:46,
+                 from ..\Src\parse_callBack.c:1:
+c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+..\Src\parse_callBack.c:65:17: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+       if(strcmp(data->data,relay1_on)==0){
+                 ^~~~
+In file included from c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\string.h:10:0,
+                 from ../Inc/main.h:46,
+                 from ..\Src\parse_callBack.c:1:
+c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+..\Src\parse_callBack.c:69:23: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+             if(strcmp(data->data,relay2_off)==0){
+                       ^~~~
+In file included from c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\string.h:10:0,
+                 from ../Inc/main.h:46,
+                 from ..\Src\parse_callBack.c:1:
+c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+..\Src\parse_callBack.c:73:23: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+             if(strcmp(data->data,relay2_on)==0){
+                       ^~~~
+In file included from c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\string.h:10:0,
+                 from ../Inc/main.h:46,
+                 from ..\Src\parse_callBack.c:1:
+c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+..\Src\parse_callBack.c:77:19: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+         if(strcmp(data->data,relay3_off)==0){
+                   ^~~~
+In file included from c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\string.h:10:0,
+                 from ../Inc/main.h:46,
+                 from ..\Src\parse_callBack.c:1:
+c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+..\Src\parse_callBack.c:81:23: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+             if(strcmp(data->data,relay3_on)==0){
+                       ^~~~
+In file included from c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\string.h:10:0,
+                 from ../Inc/main.h:46,
+                 from ..\Src\parse_callBack.c:1:
+c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\string.h:32:6: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+..\Src\parse_callBack.c: In function 'at_wait_msg':
+..\Src\parse_callBack.c:114:12: warning: value computed is not used [-Wunused-value]
+   if(g==0){*text++;}
+            ^~~~~~~
+..\Src\parse_callBack.c:125:11: warning: pointer targets in passing argument 1 of 'atoi' differ in signedness [-Wpointer-sign]
+ r_ip=atoi(data.id);
+           ^~~~
+In file included from c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\string.h:10:0,
+                 from ../Inc/main.h:46,
+                 from ..\Src\parse_callBack.c:1:
+c:\program files (x86)\atollic\truestudio for stm32 9.3.0\armtools\arm-atollic-eabi\include\stdlib.h:81:5: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int _EXFUN(atoi,(const char *__nptr));
+     ^
+..\Src\parse_callBack.c:103:10: warning: variable 'r_ip' set but not used [-Wunused-but-set-variable]
+ uint8_t  r_ip=0;
+          ^~~~
+At top level:
+..\Src\parse_callBack.c:99:13: warning: 'at_wait_msg' defined but not used [-Wunused-function]
+ static void at_wait_msg(char *text){
+             ^~~~~~~~~~~
+arm-atollic-eabi-gcc -o Great_project_2.elf Common\AWS\Src\aws_network_st_wrapper.o Common\AWS\Src\aws_subscribe_publish_sensor_values.o Common\AWS\Src\aws_timer.o Common\Shared\Src\STM32CubeRTCInterface.o Common\Shared\Src\cloud.o Common\Shared\Src\entropy_hardware_poll.o Common\Shared\Src\firewall_wrapper.o Common\Shared\Src\heap.o Common\Shared\Src\http_util.o Common\Shared\Src\iot_flash_config.o Common\Shared\Src\lwip_net.o Common\Shared\Src\mbedtls_net.o Common\Shared\Src\mbedtls_patch.o Common\Shared\Src\net.o Common\Shared\Src\net_tcp_lwip.o Common\Shared\Src\net_tls_mbedtls.o Common\Shared\Src\rfu.o Common\Shared\Src\timedate.o Common\Shared\Src\timingSystem.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_cortex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dma.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_dma_ex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_eth.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_exti.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_flash.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_flash_ex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_gpio.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_i2c.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_i2c_ex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_pwr.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_pwr_ex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rcc.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rcc_ex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rng.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rtc.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_rtc_ex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_spi.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_spi_ex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_tim.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_tim_ex.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_uart.o Drivers\STM32F7xx_HAL_Driver\Src\stm32f7xx_hal_uart_ex.o Middlewares\Third_Party\AWS\external_libs\jsmn\jsmn.o Middlewares\Third_Party\AWS\src\aws_iot_json_utils.o Middlewares\Third_Party\AWS\src\aws_iot_mqtt_client.o Middlewares\Third_Party\AWS\src\aws_iot_mqtt_client_common_internal.o Middlewares\Third_Party\AWS\src\aws_iot_mqtt_client_connect.o Middlewares\Third_Party\AWS\src\aws_iot_mqtt_client_publish.o Middlewares\Third_Party\AWS\src\aws_iot_mqtt_client_subscribe.o Middlewares\Third_Party\AWS\src\aws_iot_mqtt_client_unsubscribe.o Middlewares\Third_Party\AWS\src\aws_iot_mqtt_client_yield.o Middlewares\Third_Party\AWS\src\aws_iot_shadow.o Middlewares\Third_Party\AWS\src\aws_iot_shadow_actions.o Middlewares\Third_Party\AWS\src\aws_iot_shadow_json.o Middlewares\Third_Party\AWS\src\aws_iot_shadow_records.o Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.o Middlewares\Third_Party\FreeRTOS\Source\croutine.o Middlewares\Third_Party\FreeRTOS\Source\event_groups.o Middlewares\Third_Party\FreeRTOS\Source\list.o Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM7\r0p1\port.o Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.o Middlewares\Third_Party\FreeRTOS\Source\queue.o Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.o Middlewares\Third_Party\FreeRTOS\Source\tasks.o Middlewares\Third_Party\FreeRTOS\Source\timers.o Middlewares\Third_Party\LwIP\src\api\api_lib.o Middlewares\Third_Party\LwIP\src\api\api_msg.o Middlewares\Third_Party\LwIP\src\api\err.o Middlewares\Third_Party\LwIP\src\api\if_api.o Middlewares\Third_Party\LwIP\src\api\netbuf.o Middlewares\Third_Party\LwIP\src\api\netdb.o Middlewares\Third_Party\LwIP\src\api\netifapi.o Middlewares\Third_Party\LwIP\src\api\sockets.o Middlewares\Third_Party\LwIP\src\api\tcpip.o Middlewares\Third_Party\LwIP\src\apps\mqtt\mqtt.o Middlewares\Third_Party\LwIP\src\core\altcp.o Middlewares\Third_Party\LwIP\src\core\altcp_alloc.o Middlewares\Third_Party\LwIP\src\core\altcp_tcp.o Middlewares\Third_Party\LwIP\src\core\def.o Middlewares\Third_Party\LwIP\src\core\dns.o Middlewares\Third_Party\LwIP\src\core\inet_chksum.o Middlewares\Third_Party\LwIP\src\core\init.o Middlewares\Third_Party\LwIP\src\core\ip.o Middlewares\Third_Party\LwIP\src\core\ipv4\autoip.o Middlewares\Third_Party\LwIP\src\core\ipv4\dhcp.o Middlewares\Third_Party\LwIP\src\core\ipv4\etharp.o Middlewares\Third_Party\LwIP\src\core\ipv4\icmp.o Middlewares\Third_Party\LwIP\src\core\ipv4\igmp.o Middlewares\Third_Party\LwIP\src\core\ipv4\ip4.o Middlewares\Third_Party\LwIP\src\core\ipv4\ip4_addr.o Middlewares\Third_Party\LwIP\src\core\ipv4\ip4_frag.o Middlewares\Third_Party\LwIP\src\core\ipv6\dhcp6.o Middlewares\Third_Party\LwIP\src\core\ipv6\ethip6.o Middlewares\Third_Party\LwIP\src\core\ipv6\icmp6.o Middlewares\Third_Party\LwIP\src\core\ipv6\inet6.o Middlewares\Third_Party\LwIP\src\core\ipv6\ip6.o Middlewares\Third_Party\LwIP\src\core\ipv6\ip6_addr.o Middlewares\Third_Party\LwIP\src\core\ipv6\ip6_frag.o Middlewares\Third_Party\LwIP\src\core\ipv6\mld6.o Middlewares\Third_Party\LwIP\src\core\ipv6\nd6.o Middlewares\Third_Party\LwIP\src\core\mem.o Middlewares\Third_Party\LwIP\src\core\memp.o Middlewares\Third_Party\LwIP\src\core\netif.o Middlewares\Third_Party\LwIP\src\core\pbuf.o Middlewares\Third_Party\LwIP\src\core\raw.o Middlewares\Third_Party\LwIP\src\core\stats.o Middlewares\Third_Party\LwIP\src\core\sys.o Middlewares\Third_Party\LwIP\src\core\tcp.o Middlewares\Third_Party\LwIP\src\core\tcp_in.o Middlewares\Third_Party\LwIP\src\core\tcp_out.o Middlewares\Third_Party\LwIP\src\core\timeouts.o Middlewares\Third_Party\LwIP\src\core\udp.o Middlewares\Third_Party\LwIP\src\netif\bridgeif.o Middlewares\Third_Party\LwIP\src\netif\bridgeif_fdb.o Middlewares\Third_Party\LwIP\src\netif\ethernet.o Middlewares\Third_Party\LwIP\src\netif\lowpan6.o Middlewares\Third_Party\LwIP\src\netif\lowpan6_ble.o Middlewares\Third_Party\LwIP\src\netif\lowpan6_common.o Middlewares\Third_Party\LwIP\src\netif\ppp\auth.o Middlewares\Third_Party\LwIP\src\netif\ppp\ccp.o Middlewares\Third_Party\LwIP\src\netif\ppp\chap-md5.o Middlewares\Third_Party\LwIP\src\netif\ppp\chap-new.o Middlewares\Third_Party\LwIP\src\netif\ppp\chap_ms.o Middlewares\Third_Party\LwIP\src\netif\ppp\demand.o Middlewares\Third_Party\LwIP\src\netif\ppp\eap.o Middlewares\Third_Party\LwIP\src\netif\ppp\eui64.o Middlewares\Third_Party\LwIP\src\netif\ppp\fsm.o Middlewares\Third_Party\LwIP\src\netif\ppp\ipcp.o Middlewares\Third_Party\LwIP\src\netif\ppp\ipv6cp.o Middlewares\Third_Party\LwIP\src\netif\ppp\lcp.o Middlewares\Third_Party\LwIP\src\netif\ppp\magic.o Middlewares\Third_Party\LwIP\src\netif\ppp\mppe.o Middlewares\Third_Party\LwIP\src\netif\ppp\multilink.o Middlewares\Third_Party\LwIP\src\netif\ppp\ppp.o Middlewares\Third_Party\LwIP\src\netif\ppp\pppapi.o Middlewares\Third_Party\LwIP\src\netif\ppp\pppcrypt.o Middlewares\Third_Party\LwIP\src\netif\ppp\pppoe.o Middlewares\Third_Party\LwIP\src\netif\ppp\pppol2tp.o Middlewares\Third_Party\LwIP\src\netif\ppp\pppos.o Middlewares\Third_Party\LwIP\src\netif\ppp\upap.o Middlewares\Third_Party\LwIP\src\netif\ppp\utils.o Middlewares\Third_Party\LwIP\src\netif\ppp\vj.o Middlewares\Third_Party\LwIP\src\netif\slipif.o Middlewares\Third_Party\LwIP\src\netif\zepif.o Middlewares\Third_Party\LwIP\system\OS\sys_arch.o Middlewares\Third_Party\mbedTLS\library\aes.o Middlewares\Third_Party\mbedTLS\library\aesni.o Middlewares\Third_Party\mbedTLS\library\arc4.o Middlewares\Third_Party\mbedTLS\library\aria.o Middlewares\Third_Party\mbedTLS\library\asn1parse.o Middlewares\Third_Party\mbedTLS\library\asn1write.o Middlewares\Third_Party\mbedTLS\library\base64.o Middlewares\Third_Party\mbedTLS\library\bignum.o Middlewares\Third_Party\mbedTLS\library\blowfish.o Middlewares\Third_Party\mbedTLS\library\camellia.o Middlewares\Third_Party\mbedTLS\library\ccm.o Middlewares\Third_Party\mbedTLS\library\certs.o Middlewares\Third_Party\mbedTLS\library\chacha20.o Middlewares\Third_Party\mbedTLS\library\chachapoly.o Middlewares\Third_Party\mbedTLS\library\cipher.o Middlewares\Third_Party\mbedTLS\library\cipher_wrap.o Middlewares\Third_Party\mbedTLS\library\cmac.o Middlewares\Third_Party\mbedTLS\library\ctr_drbg.o Middlewares\Third_Party\mbedTLS\library\debug.o Middlewares\Third_Party\mbedTLS\library\des.o Middlewares\Third_Party\mbedTLS\library\dhm.o Middlewares\Third_Party\mbedTLS\library\ecdh.o Middlewares\Third_Party\mbedTLS\library\ecdsa.o Middlewares\Third_Party\mbedTLS\library\ecjpake.o Middlewares\Third_Party\mbedTLS\library\ecp.o Middlewares\Third_Party\mbedTLS\library\ecp_curves.o Middlewares\Third_Party\mbedTLS\library\entropy.o Middlewares\Third_Party\mbedTLS\library\entropy_poll.o Middlewares\Third_Party\mbedTLS\library\error.o Middlewares\Third_Party\mbedTLS\library\gcm.o Middlewares\Third_Party\mbedTLS\library\havege.o Middlewares\Third_Party\mbedTLS\library\hkdf.o Middlewares\Third_Party\mbedTLS\library\hmac_drbg.o Middlewares\Third_Party\mbedTLS\library\md.o Middlewares\Third_Party\mbedTLS\library\md2.o Middlewares\Third_Party\mbedTLS\library\md4.o Middlewares\Third_Party\mbedTLS\library\md5.o Middlewares\Third_Party\mbedTLS\library\md_wrap.o Middlewares\Third_Party\mbedTLS\library\memory_buffer_alloc.o Middlewares\Third_Party\mbedTLS\library\nist_kw.o Middlewares\Third_Party\mbedTLS\library\oid.o Middlewares\Third_Party\mbedTLS\library\padlock.o Middlewares\Third_Party\mbedTLS\library\pem.o Middlewares\Third_Party\mbedTLS\library\pk.o Middlewares\Third_Party\mbedTLS\library\pk_wrap.o Middlewares\Third_Party\mbedTLS\library\pkcs11.o Middlewares\Third_Party\mbedTLS\library\pkcs12.o Middlewares\Third_Party\mbedTLS\library\pkcs5.o Middlewares\Third_Party\mbedTLS\library\pkparse.o Middlewares\Third_Party\mbedTLS\library\pkwrite.o Middlewares\Third_Party\mbedTLS\library\platform.o Middlewares\Third_Party\mbedTLS\library\platform_util.o Middlewares\Third_Party\mbedTLS\library\poly1305.o Middlewares\Third_Party\mbedTLS\library\ripemd160.o Middlewares\Third_Party\mbedTLS\library\rsa.o Middlewares\Third_Party\mbedTLS\library\rsa_internal.o Middlewares\Third_Party\mbedTLS\library\sha1.o Middlewares\Third_Party\mbedTLS\library\sha256.o Middlewares\Third_Party\mbedTLS\library\sha512.o Middlewares\Third_Party\mbedTLS\library\ssl_cache.o Middlewares\Third_Party\mbedTLS\library\ssl_ciphersuites.o Middlewares\Third_Party\mbedTLS\library\ssl_cli.o Middlewares\Third_Party\mbedTLS\library\ssl_cookie.o Middlewares\Third_Party\mbedTLS\library\ssl_srv.o Middlewares\Third_Party\mbedTLS\library\ssl_ticket.o Middlewares\Third_Party\mbedTLS\library\ssl_tls.o Middlewares\Third_Party\mbedTLS\library\threading.o Middlewares\Third_Party\mbedTLS\library\timing.o Middlewares\Third_Party\mbedTLS\library\version.o Middlewares\Third_Party\mbedTLS\library\version_features.o Middlewares\Third_Party\mbedTLS\library\x509.o Middlewares\Third_Party\mbedTLS\library\x509_create.o Middlewares\Third_Party\mbedTLS\library\x509_crl.o Middlewares\Third_Party\mbedTLS\library\x509_crt.o Middlewares\Third_Party\mbedTLS\library\x509_csr.o Middlewares\Third_Party\mbedTLS\library\x509write_crt.o Middlewares\Third_Party\mbedTLS\library\x509write_csr.o Middlewares\Third_Party\mbedTLS\library\xtea.o Src\ethernetif.o Src\flash_f7.o Src\freertos.o Src\main.o Src\nrf24l01.o Src\parse_callBack.o Src\stm32f7xx_hal_msp.o Src\stm32f7xx_it.o Src\syscalls.o Src\system_stm32f7xx.o startup\startup_stm32f767xx.o -mthumb -mcpu=cortex-m7 -mfloat-abi=hard -mfpu=fpv5-sp-d16 -T../Debug_STM32F767ZI_FLASH.ld -specs=nosys.specs -static -Wl,-Map=Great_project_2.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for STM32 9.3.0\Tools\arm-atollic-reports.jar sizeinfo list Great_project_2.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+ 248636	    596	 153988	 403220	  62714	Great_project_2.elf
+Print size information done
+Generate listing file
+Output sent to: Great_project_2.list
+Generate listing file done
+Generate build reports done
+arm-atollic-eabi-objcopy.exe -O ihex Great_project_2.elf Great_project_2.hex 
+
+21:21:11 Build Finished (took 4s.228ms)
+

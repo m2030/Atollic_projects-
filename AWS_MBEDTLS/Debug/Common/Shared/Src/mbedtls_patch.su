@@ -1,0 +1,7 @@
+mbedtls_patch.c:51:15:xxx_get_bitlen	16	static
+mbedtls_patch.c:58:12:xxx_verify_wrap	24	static
+mbedtls_patch.c:68:12:xxx_decrypt_wrap	24	static
+mbedtls_patch.c:78:12:xxx_encrypt_wrap	24	static
+mbedtls_patch.c:88:12:xxx_check_pair_wrap	16	static
+mbedtls_patch.c:95:14:xxx_alloc_wrap	8	static
+mbedtls_patch.c:101:13:xxx_debug	16	static

@@ -1,0 +1,7 @@
+aws_iot_mqtt_client_publish.c:52:20:_aws_iot_mqtt_read_string_with_len	32	static
+aws_iot_mqtt_client_publish.c:87:20:_aws_iot_mqtt_internal_serialize_publish	48	static
+aws_iot_mqtt_client_publish.c:146:13:aws_iot_mqtt_internal_serialize_ack	56	static
+aws_iot_mqtt_client_publish.c:197:20:_aws_iot_mqtt_internal_publish	96	static
+aws_iot_mqtt_client_publish.c:262:13:aws_iot_mqtt_publish	32	static
+aws_iot_mqtt_client_publish.c:312:13:aws_iot_mqtt_internal_deserialize_publish	48	static
+aws_iot_mqtt_client_publish.c:383:13:aws_iot_mqtt_internal_deserialize_ack	48	static

@@ -1,0 +1,9 @@
+BH1750.c:40:6:_Error_Handler	0	static
+BH1750.c:47:19:BH1750_init_i2c	16	static
+BH1750.c:68:19:BH1750_send_command	24	static
+BH1750.c:87:18:BH1750_init_dev_struct	24	static
+BH1750.c:116:19:BH1750_init_dev	8	static
+BH1750.c:125:19:BH1750_read_dev	16	static
+BH1750.c:137:19:BH1750_convert	8	static
+BH1750.c:149:19:BH1750_get_lumen	8	static
+BH1750.c:82:6:BH1750_poll_self	0	static

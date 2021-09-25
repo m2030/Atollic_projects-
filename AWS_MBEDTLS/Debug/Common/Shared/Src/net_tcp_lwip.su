@@ -1,0 +1,9 @@
+net_tcp_lwip.c:69:5:net_sock_create_lwip	40	static
+net_tcp_lwip.c:117:5:net_sock_open_lwip	104	static
+net_tcp_lwip.c:261:5:net_sock_recv_tcp_lwip	40	static
+net_tcp_lwip.c:309:5:net_sock_recvfrom_udp_lwip	72	static
+net_tcp_lwip.c:373:5:net_sock_send_tcp_lwip	40	static
+net_tcp_lwip.c:420:5:net_sock_sendto_udp_lwip	64	static
+net_tcp_lwip.c:475:5:net_sock_close_tcp_lwip	24	static
+net_tcp_lwip.c:509:5:net_sock_destroy_tcp_lwip	32	static
+net_tcp_lwip.c:546:5:net_get_hostaddress_lwip	72	static

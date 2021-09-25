@@ -1,0 +1,7 @@
+mqtt_socket.c:47:5:MqttSocket_TlsSocketReceive	16	static
+mqtt_socket.c:70:5:MqttSocket_TlsSocketSend	16	static
+mqtt_socket.c:93:5:MqttSocket_Init	0	static
+mqtt_socket.c:152:5:MqttSocket_Write	24	static
+mqtt_socket.c:238:5:MqttSocket_Read	24	static
+mqtt_socket.c:462:5:MqttSocket_Disconnect	8	static
+mqtt_socket.c:317:5:MqttSocket_Connect	24	static

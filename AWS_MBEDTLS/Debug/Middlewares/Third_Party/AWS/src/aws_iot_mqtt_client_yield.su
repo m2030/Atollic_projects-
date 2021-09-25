@@ -1,0 +1,6 @@
+aws_iot_mqtt_client_yield.c:47:13:_aws_iot_mqtt_force_client_disconnect	16	static
+aws_iot_mqtt_client_yield.c:53:20:_aws_iot_mqtt_handle_disconnect	24	static
+aws_iot_mqtt_client_yield.c:74:20:_aws_iot_mqtt_handle_reconnect	24	static
+aws_iot_mqtt_client_yield.c:111:20:_aws_iot_mqtt_keep_alive	32	static
+aws_iot_mqtt_client_yield.c:180:20:_aws_iot_mqtt_internal_yield	32	static
+aws_iot_mqtt_client_yield.c:261:13:aws_iot_mqtt_yield	24	static

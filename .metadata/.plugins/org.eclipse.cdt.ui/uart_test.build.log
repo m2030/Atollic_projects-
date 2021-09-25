@@ -1,0 +1,7 @@
+10:33:43 **** Incremental Build of configuration Debug for project uart_test ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-objcopy.exe -O ihex uart_test.elf uart_test.hex 
+Info: Parallel threads used: 0
+
+10:33:44 Build Finished (took 192ms)
+

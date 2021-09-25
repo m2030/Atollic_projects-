@@ -1,0 +1,2 @@
+mqttclient.c:58:12:mqtt_message_cb	112	static
+mqttclient.c:216:5:mqttclient_test	56	static

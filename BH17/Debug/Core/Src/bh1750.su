@@ -1,0 +1,8 @@
+bh1750.c:33:6:_Error_Handler	16	static
+bh1750.c:41:19:BH1750_send_command	32	static
+bh1750.c:56:6:BH1750_poll_self	16	static
+bh1750.c:61:18:BH1750_init_dev_struct	32	static
+bh1750.c:90:19:BH1750_init_dev	16	static
+bh1750.c:99:19:BH1750_read_dev	24	static
+bh1750.c:111:19:BH1750_convert	32	static
+bh1750.c:123:19:BH1750_get_lumen	16	static

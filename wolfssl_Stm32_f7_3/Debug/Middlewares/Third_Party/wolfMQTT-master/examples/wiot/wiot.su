@@ -1,0 +1,2 @@
+wiot.c:78:12:mqtt_message_cb	112	static
+wiot.c:127:5:wiot_test	56	static

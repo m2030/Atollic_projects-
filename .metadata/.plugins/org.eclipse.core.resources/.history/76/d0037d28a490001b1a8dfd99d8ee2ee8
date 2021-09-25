@@ -1,0 +1,3 @@
+coding.c:93:23:Base64_Char2Val	12	static
+coding.c:116:22:Base64_SkipNewline	20	static
+coding.c:146:5:Base64_Decode	64	static

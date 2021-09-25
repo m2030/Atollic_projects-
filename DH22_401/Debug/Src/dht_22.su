@@ -1,0 +1,6 @@
+dht_22.c:174:6:set_gpio_output	0	static
+dht_22.c:183:6:set_gpio_input	0	static
+dht_22.c:191:6:DHT22_start	8	static
+dht_22.c:203:6:check_response	8	static
+dht_22.c:220:9:read_data	16	static
+dht_22.c:239:6:delay_Timer	16	static

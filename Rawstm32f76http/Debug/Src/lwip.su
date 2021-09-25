@@ -1,0 +1,2 @@
+lwip.c:68:6:MX_LWIP_Init	32	static
+lwip.c:130:6:MX_LWIP_Process	8	static

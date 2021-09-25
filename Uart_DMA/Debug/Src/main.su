@@ -1,0 +1,9 @@
+main.c:81:6:init	24	static
+main.c:87:6:loop	56	static
+main.c:181:1:__io_putchar	24	static
+main.c:197:1:__io_getchar	24	static
+main.c:281:6:SystemClock_Config	96	static
+main.c:215:5:main	136	static
+main.c:618:6:HAL_UART_TxCpltCallback	0	static
+main.c:623:6:HAL_UART_RxCpltCallback	0	static
+main.c:643:6:Error_Handler	0	static

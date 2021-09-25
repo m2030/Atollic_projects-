@@ -1,0 +1,5 @@
+aws_subscribe_publish_sensor_values.c:234:6:MQTTcallbackHandler	136	static
+aws_subscribe_publish_sensor_values.c:193:13:disconnectCallbackHandler	8	static
+aws_subscribe_publish_sensor_values.c:156:5:cloud_device_enter_credentials	200	static
+aws_subscribe_publish_sensor_values.c:180:6:app_needs_device_keypair	0	static
+aws_subscribe_publish_sensor_values.c:282:5:subscribe_publish_sensor_values	5168	static

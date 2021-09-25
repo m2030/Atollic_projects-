@@ -1,0 +1,4 @@
+aws_iot_mqtt_client_unsubscribe.c:56:20:_aws_iot_mqtt_serialize_unsubscribe	56	static
+aws_iot_mqtt_client_unsubscribe.c:103:20:_aws_iot_mqtt_deserialize_unsuback	40	static
+aws_iot_mqtt_client_unsubscribe.c:133:20:_aws_iot_mqtt_internal_unsubscribe	72	static
+aws_iot_mqtt_client_unsubscribe.c:213:13:aws_iot_mqtt_unsubscribe	32	static

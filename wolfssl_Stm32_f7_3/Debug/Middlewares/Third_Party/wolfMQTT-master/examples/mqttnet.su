@@ -1,0 +1,8 @@
+mqttnet.c:536:13:setup_timeout	0	static
+mqttnet.c:1016:12:NetDisconnect	8	static
+mqttnet.c:802:12:NetWrite	48	static
+mqttnet.c:568:12:NetConnect	136	static
+mqttnet.c:1004:12:NetRead	72	static
+mqttnet.c:1034:5:MqttClientNet_Init	16	static
+mqttnet.c:1149:5:MqttClientNet_DeInit	8	static
+mqttnet.c:1160:5:MqttClientNet_Wake	0	static

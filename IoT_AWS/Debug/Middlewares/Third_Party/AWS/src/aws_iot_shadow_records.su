@@ -1,0 +1,15 @@
+aws_iot_shadow_records.c:471:13:shadow_delta_callback	56	static
+aws_iot_shadow_records.c:238:16:findIndexOfSubscriptionList	24	static
+aws_iot_shadow_records.c:143:13:topicNameFromThingAndAction	56	static
+aws_iot_shadow_records.c:250:13:unsubscribeFromAcceptedAndRejected	176	static
+aws_iot_shadow_records.c:180:13:AckStatusCallback	160	static
+aws_iot_shadow_records.c:99:6:initDeltaTokens	0	static
+aws_iot_shadow_records.c:108:13:registerJsonTokenOnDelta	32	static
+aws_iot_shadow_records.c:290:6:initializeRecords	8	static
+aws_iot_shadow_records.c:304:6:isSubscriptionPresent	192	static
+aws_iot_shadow_records.c:332:13:subscribeToShadowActionAcks	64	static
+aws_iot_shadow_records.c:385:6:incrementSubscriptionCnt	176	static
+aws_iot_shadow_records.c:403:13:publishToShadowAction	104	static
+aws_iot_shadow_records.c:423:6:getNextFreeIndexOfAckWaitList	12	static
+aws_iot_shadow_records.c:442:6:addToAckWaitList	24	static
+aws_iot_shadow_records.c:455:6:HandleExpiredResponseCallbacks	40	static

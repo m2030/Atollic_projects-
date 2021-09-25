@@ -1,0 +1,10 @@
+aws_network_st_wrapper.c:120:13:iot_tls_is_connected	0	static
+aws_network_st_wrapper.c:51:13:my_debug	0	static
+aws_network_st_wrapper.c:149:13:iot_tls_connect	576	static
+aws_network_st_wrapper.c:65:12:_iot_tls_verify_cert	1032	static
+aws_network_st_wrapper.c:381:13:iot_tls_write	40	static
+aws_network_st_wrapper.c:423:13:iot_tls_read	32	static
+aws_network_st_wrapper.c:470:13:iot_tls_disconnect	16	static
+aws_network_st_wrapper.c:493:13:iot_tls_destroy	16	static
+aws_network_st_wrapper.c:88:6:_iot_tls_set_connect_params	8	static
+aws_network_st_wrapper.c:101:13:iot_tls_init	8	static

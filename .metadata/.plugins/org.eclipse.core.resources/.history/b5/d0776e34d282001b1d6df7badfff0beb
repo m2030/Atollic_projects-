@@ -1,0 +1,16 @@
+dh.c:2230:12:_DhSetKey	48	static
+dh.c:151:17:wc_Dh_ffdhe2048_Get	0	static
+dh.c:924:5:wc_InitDhKey_ex	16	static
+dh.c:951:5:wc_InitDhKey	0	static
+dh.c:957:5:wc_FreeDhKey	8	static
+dh.c:1403:5:wc_DhCheckPubKey_ex	40	static
+dh.c:1550:5:wc_DhCheckPubKey	16	static
+dh.c:1568:5:wc_DhCheckPubValue	12	static
+dh.c:1608:5:wc_DhCheckPrivKey_ex	40	static
+dh.c:1702:5:wc_DhCheckPrivKey	16	static
+dh.c:1719:5:wc_DhCheckKeyPair	40	static
+dh.c:1828:5:wc_DhGenerateKeyPair	88	static
+dh.c:2060:5:wc_DhAgree	40	static
+dh.c:2309:5:wc_DhSetCheckKey	4	static
+dh.c:2317:5:wc_DhSetKey_ex	32	static
+dh.c:2325:5:wc_DhSetKey	40	static

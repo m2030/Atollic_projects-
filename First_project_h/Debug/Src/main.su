@@ -1,0 +1,5 @@
+main.c:108:1:__io_putchar	24	static
+main.c:124:1:__io_getchar	24	static
+main.c:222:6:SystemClock_Config	312	static
+main.c:146:5:main	256	static
+main.c:527:6:Error_Handler	0	static
